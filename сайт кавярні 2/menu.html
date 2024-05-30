@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Замовлення напоїв та десертів</title>
+</head>
+<style>
+#shapka
+     {
+    width:1450px;
+background: rgb(234, 182, 239);
+height:200px;
+margin-right:auto;
+margin-left:auto;
+padding-top: 10px;
+padding:20px;
+border-radius: 7px;
+border: 2px solid black;
+}
+
+#container  { 
+
+  width:px;  
+  margin-right:auto;  
+  margin-left:auto;  
+
+
+display:flex;
+position: relative;
+}
+
+#menu  { 
+  width:500px; 
+  height: 1000px; 
+float: left;
+  border-radius: 7px;
+  color: black;
+  background:rgb(251, 146, 246);  
+  padding:10px; 
+  margin-top: 5px;
+  margin-left: 12px;
+  display: block;
+  border: 2px solid black;
+ } 
+
+ #block {
+    width:500px; 
+  height: 652px; 
+float: left;
+  border-radius: 7px;
+  color: black;
+  background:rgb(251, 146, 246);  
+  padding:10px; 
+  margin-top: px;
+  margin-left: 15px;
+  border: 2px solid black;
+  position: absolute;
+  top: 1295px;
+  right: 985px;
+ }
+
+ #content  { 
+    width:950px;  
+    height: 1700px;
+   float: right;
+    padding:10px;  
+    background:rgb(244, 101, 236); 
+margin-top: 5px;
+border-radius: 7px;
+margin-left: 5px;
+border: 2px solid black;
+margin-right: 13px;
+}  
+
+
+
+
+
+   #bottom { 
+ width:1470px;  
+ height: 150px;
+ clear:left; 
+ padding:10px;  
+ background:black; 
+ margin-right:auto; 
+  margin-left:auto; 
+  border-radius: 7px;
+  border: 2px solid white;
+}
+ /* Стилізація кнопки "Купити" */
+ .buy-button {
+        padding: 10px 20px;
+        background-color: rgb(189, 56, 182);
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: transform 0.3s ease; /* Плавна анімація */
+    }
+
+
+    /* Стилі для анімації при наведенні */
+    .buy-button:hover {
+        transform: scale(1.1); /* Збільшуємо розмір кнопки */
+    }
+
+    .animate-buy-button {
+    transform: scale(1.1); /* Збільшуємо розмір кнопки */
+    transition: transform 0.3s ease; /* Додаємо плавну анімацію */
+}
+
+.carousel { 
+      position: relative; 
+      max-width: 600px; 
+      margin: auto; 
+    } 
+     
+    .carousel-images img { 
+      display: none; 
+      width: 100%; 
+    } 
+     
+    .carousel-images img.active { 
+      display: block; 
+    } 
+     
+    .prev, .next { 
+      position: absolute; 
+      top: 50%; 
+      transform: translateY(-50%); 
+      background-color: #333; 
+      color: white; 
+      border: none; 
+      cursor: pointer; 
+      padding: 10px; 
+      font-size: 18px; 
+      transition: background-color 0.3s; 
+    } 
+     
+    .prev:hover, .next:hover { 
+      background-color: #555; 
+    } 
+     
+    .prev { 
+      left: 0; 
+    } 
+     
+    .next { 
+      right: 0; 
+    } 
+    .carousel { 
+      position: relative; 
+      max-width: 200px; 
+      margin: auto; 
+    } 
+     
+    .carousel-images img { 
+      display: none; 
+      width: 100%; 
+    } 
+     
+    .carousel-images img.active { 
+      display: block; 
+    } 
+     
+    .prev, .next { 
+      position: absolute; 
+      top: 50%; 
+      transform: translateY(-50%); 
+      background-color: #333; 
+      color: white; 
+      border: none; 
+      cursor: pointer; 
+      padding: 10px; 
+      font-size: 18px; 
+      transition: background-color 0.3s; 
+    } 
+     
+    .prev:hover, .next:hover { 
+      background-color: #555; 
+    } 
+     
+    .prev { 
+      left: 0; 
+    } 
+     
+    .next { 
+      right: 0; 
+    } 
+     
+    #popup {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        padding: 20px;
+        border: 1px solid black;
+        z-index: 9999;
+    }
+
+
+
+
+
+
+</style>
+
+
+<body style="margin: 0; padding: 0; background: url('https://pibig.info/uploads/posts/2022-11/1669662613_1-pibig-info-p-spokoinii-fon-dlya-prezentatsii-krasivo-1.jpg') no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
+    <div id="shapka">
+        <img src="Remove-bg.ai_1713517070341.png" width="300" height="200" style="float: left;"  >
+        &nbsp;
+        <a href="codex.html"> <button style="width: 300px; height: 180px; border-radius: 7px; ">  Головна</button></a>
+        <a href="codex.html #menu"> <button style="width: 300px; height: 180px; border-radius: 7px; "> Зробити замовлення</button></a>  
+        <a href="menu.html"> <button style="width: 300px; height: 180px; border-radius: 7px; "> Меню</button></a>
+       
+    </div>
+    <div id="container">
+        <div id="menu"> 
+        
+            <h2 align="center">Зробити замовлення</h2>
+            <div class="carousel"> 
+                <div class="carousel-images"> 
+                  <img src="photo_5242356748885548824_y.jpg" alt="Фото 1"> 
+                  <img src="photo_5233426171847366743_y.jpg" alt="Фото 2"> 
+                  <img src="photo_5240070172721668891_y.jpg" alt="Фото 3"> 
+                </div> 
+                <button class="prev" onclick="prevSlide()">&#10094;</button> 
+                <button class="next" onclick="nextSlide()">&#10095;</button> 
+              </div> 
+             
+              <script> 
+                let slideIndex = 0; 
+            showSlide(slideIndex); 
+             
+            function nextSlide() { 
+              showSlide(slideIndex += 1); 
+            } 
+             
+            function prevSlide() { 
+              showSlide(slideIndex -= 1); 
+            } 
+             
+            function showSlide(index) { 
+              let slides = document.getElementsByClassName("carousel-images")[0].getElementsByTagName("img"); 
+              if (index >= slides.length) { 
+                slideIndex = 0; 
+              } 
+              if (index < 0) { 
+                slideIndex = slides.length - 1; 
+              } 
+              for (let i = 0; i < slides.length; i++) { 
+                slides[i].classList.remove("active"); 
+              } 
+              slides[slideIndex].classList.add("active"); 
+            } 
+              </script>
+        <hr style="width: 100%;" color="darkred">
+        
+        <form action="#" method="POST" id="orderForm">
+          <label for="name">Ім'я:</label><br>
+          <input type="text" id="name" name="name" required><br><br>
+        
+          <label for="phone">Номер телефону:</label><br>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br><br>
+        
+          <label for="address">Адреса доставки:</label><br>
+          <textarea id="address" name="address" rows="4" required></textarea><br><br>
+        
+          <label for="beverage">Напій:</label><br>
+          <select id="beverage" name="beverage" required>
+              <option value="">Оберіть напій</option>
+              <option value="Немає">Немає</option>
+              <option value="Еспрессо">Еспрессо</option>
+              <option value="Американо">Американо</option>
+              <option value="Американо з молоком">Американо з молоком</option>
+              <option value="Флет вайт">Флет вайт</option>
+              <option value="Мача лате">Мача лате</option>
+              <option value="Доппіо">Доппіо</option>
+              <option value="Капучино">Капучино</option>
+              <option value="Какао">Какао</option>
+              <option value="Гарячий шоколад">Гарячий шоколад</option>
+              <option value="Чай звичайний">Чай звичайний</option>
+              <option value="Чай натуральний">Чай натуральний</option>
+          </select><br><br>
+        
+          <label for="dessert">Десерт:</label><br>
+          <select id="dessert" name="dessert" required>
+              <option value="">Оберіть десерт</option>
+              <option value="Маренговий рулет">Маренговий рулет</option>
+              <option value="Макарунс">Макарунс</option>
+              <option value="Вафельний торт">Вафельний торт</option>
+              <option value="Торт снікерс">Торт снікерс</option>
+              <option value="Наполеон">Наполеон</option>
+              <option value="Червоний оксамит">Червоний оксамит</option>
+              <option value="Чізкейк">Чізкейк</option>
+          </select><br><br>
+        
+          <label for="comments">*Для уточнення замовлення:</label><br>
+          <textarea id="comments" name="comments" rows="4"></textarea><br><br>
+        
+          <button type="button" id="addToCartBtn">Додати до кошика</button>
+        </form>
+        
+        <div id="cart">
+          <h3>Кошик</h3>
+          <ul id="cartItems"></ul>
+          <p id="totalPrice">Загальна вартість: 0 грн</p>
+          <button type="button" id="checkoutBtn">Оформити замовлення</button>
+        </div>
+        
+        <script>
+          // Код JavaScript
+        
+          const cartItems = document.getElementById('cartItems');
+          const totalPriceDisplay = document.getElementById('totalPrice');
+        
+          let cart = [];
+        
+          function addToCart(item) {
+              cart.push(item);
+              renderCart();
+          }
+        
+          function removeFromCart(index) {
+              cart.splice(index, 1);
+              renderCart();
+          }
+        
+          function renderCart() {
+              cartItems.innerHTML = '';
+              let total = 0;
+              cart.forEach((item, index) => {
+                  const li = document.createElement('li');
+                  li.textContent = `${item.name} - ${item.price} грн`;
+                  const removeBtn = document.createElement('button');
+                  removeBtn.textContent = 'Видалити';
+                  removeBtn.addEventListener('click', () => {
+                      removeFromCart(index);
+                  });
+                  li.appendChild(removeBtn);
+                  cartItems.appendChild(li);
+                  total += item.price;
+              });
+              totalPriceDisplay.textContent = `Загальна вартість: ${total} грн`;
+          }
+        
+          document.getElementById('addToCartBtn').addEventListener('click', () => {
+              const beverage = document.getElementById('beverage').value;
+              const dessert = document.getElementById('dessert').value;
+              const item = {
+                  name: `${beverage}, ${dessert}`,
+                  price: calculatePrice(beverage, dessert)
+              };
+              addToCart(item);
+          });
+        
+          function calculatePrice(beverage, dessert) {
+              // Ви можете додати власну логіку розрахунку ціни тут
+              // У цьому прикладі просто вертаємо випадкову ціну від 10 до 50
+              return Math.floor(Math.random() * (50 - 10 + 1)) + 10;
+          }
+        
+          document.getElementById('checkoutBtn').addEventListener('click', () => {
+              const formData = new FormData(document.getElementById('orderForm'));
+              const order = {};
+              for (const [key, value] of formData.entries()) {
+                  order[key] = value;
+              }
+              order.items = cart;
+              console.log('Замовлення:', order);
+              // Тут ви можете відправити замовлення на сервер або зробити інше необхідне
+              // Наприклад, можна відправити AJAX-запит на сервер з даними замовлення
+          });
+        </script>
+            
+        <button class="buy-button">Замовити</button>
+        <div id="popup">
+            <p>Дякуємо, оператор з'єднається з вами найближчим часом.</p>
+        </div>
+        
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const buyButton = document.querySelector(".buy-button");
+                const popup = document.getElementById("popup");
+        
+                buyButton.addEventListener("click", function() {
+                    // Показуємо вікно після кліку на кнопку
+                    popup.style.display = "block";
+        
+                    // По закриттю вікна (натисканням будь-де на сторінці) сховуємо вікно
+                    window.addEventListener("click", function(event) {
+                        if (event.target === popup) {
+                            popup.style.display = "none";
+                        }
+                    });
+                });
+            });
+        </script>
+        
+        
+        <script>
+            
+            // Отримуємо кнопку "Купити"
+            var buyButton = document.querySelector('.buy-button');
+        
+        
+            // Додаємо подію "mouseover" на кнопку "Купити"
+            buyButton.addEventListener('mouseover', function() {
+                // Додаємо клас анімації при наведенні
+                buyButton.classList.add('animate-buy-button');
+            });
+        
+        
+            // Видаляємо клас анімації при знятті миші
+            buyButton.addEventListener('mouseout', function() {
+                buyButton.classList.remove('animate-buy-button');
+            });
+        </script>
+   
+
+    
+
+    <script>
+        function closeForm() {
+            window.location.href = "menu.html";
+        }
+    </script>
+    </div>
+    <div id="content"><h1 align="center"> Меню</h1> 
+        <h2>Еспресо тонік</h2>
+        <video width="520" height="440" controls title="Це відео не має авторських прав">
+            <source src="tonik 480.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+    <h5> &copy; це відео не має авторських прав</h5>
+    </section>
+    <section>
+        <h2>Айс лате</h2>
+        <video width="520" height="440" controls>
+            <source src="ice late480.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <h5> &copy; це відео не має авторських прав</h5>
+    </section>
+    
+    <section>
+    <h2>Бамбл</h2>
+    <video width="520" height="440" controls>
+    <source src="bumble480.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+    </video>
+    
+    <h5> &copy; це відео не має авторських прав</h5>
+    </section>
+    
+    
+    
+    
+    </div>
+        </div>
+    <div id="block">
+    
+        <table border="1">
+            <caption><h2>Реєстрація</h2></caption>
+            <tr>
+                <td>Ім'я:</td>
+                <td><input type="text" name="name"></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email"></td>
+            </tr>
+            <tr>
+                <td>Пароль:</td>
+                <td><input type="password" name="password"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="submit" value="Зареєструватися"></td>
+            </tr>
+        </table>
+        
+        <table border="1">
+            <caption><h2>Вхід</h2></caption>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email"></td>
+            </tr>
+            <tr>
+                <td>Пароль:</td>
+                <td><input type="password" name="password"></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="submit" value="Увійти"></td>
+            </tr>
+        </table>
+    <img src="photo_5287714713087629804_y.jpg" alt="photo" width="250" height="300" >
+    
+    
+    
+    </div>
+    
+    
+    
+    
+        <div id="bottom"><font color="white"> <footer>
+            <p>Контактна інформація: Декабристів 151, +380988691801, timboom171@gmail.com</p>
+            <nav>
+                <ul>
+                    <a href="https://www.instagram.com/coffee_v_momenti?igsh=dHB3M3J6ZzF5OTZp">Instagram</a>
+                </ul>
+            </nav>
+        </footer> </div></font>
+</body>
+</html>
